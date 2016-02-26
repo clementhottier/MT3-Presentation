@@ -5,10 +5,31 @@
     \item Décompostion de la nutation :
       \begin{itemize}
         \item Addition de terme périodique avec amplitude ajusté
-        \item Mouvement Libre (période de l'ordre de 450 Jours)
+        \item Mouvement Libre (période de 457 Jours)
       \end{itemize}
   \end{itemize} 
 
-  \includegraphics[scale=0.3]{original_frequence_nutation.pdf}
+  \centerline{\includegraphics[scale=0.3]{original_frequence_nutation.pdf}}
+\end{frame}
+
+\begin{frame}
+  \frtt{Nettoyage du terme libre}
+  \begin{itemize}
+      \onslide<1->
+    \item Terme empirique : $ \tilde{A}_t \exp\left( \frac{2\pi }{457 \mbox{jours}}i \times t  \right) $
+      \onslide<2->
+    \item Ajustement du terme $ \tilde{A}_t $ sur une fenêtre centré sur $t$ 
+      \onslide<3->
+    \item Déplacement de la fenêtre et interpolation : $ \tilde{A}_t\ \forall\ t $
+  \end{itemize}
+
+  \onslide<4->
+  \centerline{\includegraphics[scale=0.4]{free_wobble_manuel.pdf}}
+\end{frame}
+
+
+\begin{frame}
+  \frtt{Signal Nettoyé}
+  \includegraphics[scale=0.5]{frequence_nutation.pdf}
 \end{frame}
 
