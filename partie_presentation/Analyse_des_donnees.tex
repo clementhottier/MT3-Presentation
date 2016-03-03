@@ -2,11 +2,21 @@
 
 \begin{frame}
   \frtt{Analyse des données}
+Données: \\
 	\begin{itemize}
-	  \item L'équation des moindres carrés:
-      \item $X(t) + i \times Y(t) = \sum\limits_{j=1}^{40} (\widetilde{A}_{j} \times e^{(\omega_{j}*t + \varphi_{j})})$
-      \item $\widetilde{A} = A_{Re} + i \times A_{Im}$
+		\item VLBI Earth Orientation Solution OPA2015a	
+		\item Rigid Earth Nutation (Souchay et al. 1997)
 	\end{itemize}
+	\vspace{0.5cm}
+	L'équation des moindres carrés: \\
+	$X(t) + i \times Y(t) = \sum\limits_{j=1}^{40} (\widetilde{A}_{j} \times e^{(\omega_{j}*t + \varphi_{j})})$ \\
+	$\widetilde{A} = A_{Re} + i \times A_{Im}$ \\
+
+	\vspace{0.5cm}
+	$\widetilde{A}$ : amplitude \\
+	$\omega$ : fréquence \\
+	$\varphi$ : phase \\
+	$t$ : temps
 \end{frame}
 
 \begin{frame}
@@ -17,7 +27,7 @@
 \end{frame}
 
 \begin{frame}
-  \frtt{Comparaison de dX et dY entre la série et de l'observation}
+  \frtt{Evolution de dX et dY dans le temps}
 	\begin{center}
 		\includegraphics[width=1.0\textwidth]{fit_amplitude_ser_obs.pdf}
 	\end{center}
