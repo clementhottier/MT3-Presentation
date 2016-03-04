@@ -2,38 +2,45 @@
 
 \begin{frame}
   \frtt{Analyse des données}
-Données: \\
+\textbf{Source} :\\
 	\begin{itemize}
 		\item VLBI Earth Orientation Solution OPA2015a	
 		\item Rigid Earth Nutation (Souchay et al. 1997)
 	\end{itemize}
-	\vspace{0.5cm}
-	L'équation des moindres carrés: \\
-	$X(t) + i \times Y(t) = \sum\limits_{j=1}^{40} (\widetilde{A}_{j} \times e^{(\omega_{j}*t + \varphi_{j})})$ \\
-	$\widetilde{A} = A_{Re} + i \times A_{Im}$ \\
+\textbf{Données} :
+	\begin{itemize}
+	\item séries temporelles de nutations en $X(t)$ et $Y(t)$
+	\end{itemize}
+	\vfill
+	\onslide<2->{
+	Ajustement des amplitudes complexes $\widetilde{A} = A_{Re} + iA_{Im}$ par méthode des moindres carrés :
+	\begin{equation*}
+	\left(X+ iY\right) = \sum\limits_{j=1}^{40} (\widetilde{A}_{j} \times e^{(\omega_{j}*t + \varphi_{j})})
+	\only<3>{+ \tilde{a}t + \tilde{b}}
+	\end{equation*}
 
-	\vspace{0.5cm}
-	$\widetilde{A}$ : amplitude \\
-	$\omega$ : fréquence \\
-	$\varphi$ : phase \\
-	$t$ : temps
+%	$\widetilde{A}$ : amplitude \\
+%	$\omega$ : fréquence \\
+%	$\varphi$ : phase \\
+%	$t$ : temps
+}
 \end{frame}
 
 \begin{frame}
-  \frtt{Amplitude Ajustées}
+  \frtt{Amplitudes Ajustées}
 	\begin{center}
 		\includegraphics[width=1.0\textwidth]{amplitude_freq.pdf}
 	\end{center}
 \end{frame}
 
 \begin{frame}
-  \frtt{Corrélation}
-  \centerline{\includegraphics[width=0.8\textwidth]{fit_amplitude_correlation.pdf}}
+  \frtt{Corrélations}
+%  \centerline{\includegraphics[width=0.8\textwidth]{fit_amplitude_correlation.pdf}}
 \end{frame}
 
 
 \begin{frame}
-  \frtt{Comparaison entre série ajusté et observation}
+  \frtt{Série ajustée VS observations}
 	\begin{center}
 		\includegraphics[width=1.0\textwidth]{fit_amplitude_ser_obs.pdf}
 	\end{center} 
